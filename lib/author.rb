@@ -15,7 +15,6 @@ class Author
     new_post.author = self 
   end 
   def self.post_count 
-    postArr = Post.all.select {|post| post.author == self}
-    postArr.length 
+    Post.all.length 
   end 
 end 
