@@ -13,7 +13,7 @@ class Artist
     new_song = Song.new(name)
     new_song.artist = self 
   end 
-  def song_count 
+  def self.song_count 
     songArr = Song.all.select {|song| song.artist == self}
     songArr.length 
     binding.pry 
